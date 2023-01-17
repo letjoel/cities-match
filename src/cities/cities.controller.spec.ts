@@ -21,4 +21,7 @@ describe('CitiesController', () => {
   it('should return findAll working', () => {
     expect(controller.findAll()).toBe('findAll working');
   });
+  it('should return findOne working', () => {
+    expect(controller.findOneCity('1')).toBe('city 1 found');
+  });
 });
